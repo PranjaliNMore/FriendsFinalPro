@@ -1,63 +1,95 @@
+/* ==========================
+   GIFT GRID
+========================== */
+
 .gift-grid{
 
-display:grid;
+    display:grid;
 
-grid-template-columns:repeat(2,150px);
+    grid-template-columns:repeat(2,150px);
 
-gap:30px;
+    gap:30px;
 
-justify-content:center;
+    justify-content:center;
 
-margin-top:40px;
+    margin-top:40px;
 
 }
 
+/* ==========================
+   GIFT BOX
+========================== */
+
 .gift{
 
-font-size:80px;
+    font-size:80px;
 
-cursor:pointer;
+    cursor:pointer;
 
-transition:.3s;
+    transition:.3s;
 
-user-select:none;
+    user-select:none;
 
 }
 
 .gift:hover{
 
-transform:
-
-scale(1.2)
-
-rotate(-10deg);
+    transform:scale(1.2) rotate(-10deg);
 
 }
+
+/* ==========================
+   RESULT TEXT
+========================== */
 
 #result{
 
-margin-top:35px;
+    margin-top:35px;
 
-min-height:60px;
+    min-height:60px;
 
-font-size:28px;
+    font-size:28px;
 
-}
+    line-height:1.5;
 
-@media(max-width:768px){
-
-.gift-grid{
-
-grid-template-columns:repeat(2,120px);
-
-gap:20px;
+    word-wrap:break-word;
 
 }
 
-.gift{
+/* ==========================
+   MOBILE RESPONSIVE
+========================== */
 
-font-size:65px;
+@media (max-width:768px){
 
-}
+    .gift-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+        gap:18px;
+
+        width:100%;
+
+        max-width:300px;
+
+        margin:30px auto;
+
+    }
+
+    .gift{
+
+        font-size:60px;
+
+    }
+
+    #result{
+
+        font-size:20px;
+
+        min-height:50px;
+
+        padding:0 10px;
+
+    }
 
 }

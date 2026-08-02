@@ -25,9 +25,12 @@ body{
 
     align-items:center;
 
-    overflow:hidden;
+    overflow-x:hidden;
+    overflow-y:auto;
 
     position:relative;
+
+    padding:20px;
 
     background:linear-gradient(
         -45deg,
@@ -72,6 +75,8 @@ background-position:0% 50%;
     max-width:700px;
 
     padding:45px;
+
+    margin:30px auto;
 
     text-align:center;
 
@@ -400,45 +405,63 @@ transform:scale(.97);
    MOBILE
 ========================== */
 
-@media(max-width:768px){
+@media (max-width:768px){
 
-.card{
+    body{
 
-padding:25px;
+        align-items:flex-start;
 
-}
+        padding:20px 10px;
 
-h1{
+    }
 
-font-size:34px;
+    .card{
 
-}
+        width:95%;
 
-h2{
+        padding:25px;
 
-font-size:22px;
+        margin:20px auto;
 
-}
+    }
 
-p{
+    h1{
 
-font-size:18px;
+        font-size:32px;
 
-}
+    }
 
-button{
+    h2{
 
-width:100%;
+        font-size:22px;
 
-font-size:18px;
+    }
 
-}
+    p{
 
-input{
+        font-size:17px;
 
-font-size:17px;
+        line-height:1.6;
 
-}
+    }
+
+    button{
+
+        width:100%;
+
+        padding:14px;
+
+        font-size:18px;
+
+    }
+
+    input{
+
+        width:100%;
+
+        font-size:17px;
+
+    }
 
 }
 

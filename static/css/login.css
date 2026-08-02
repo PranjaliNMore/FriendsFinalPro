@@ -1,126 +1,198 @@
+/* ==========================
+   LOGIN CARD
+========================== */
+
 .login-card{
 
-max-width:550px;
+    width:90%;
+    max-width:550px;
 
 }
 
+/* ==========================
+   LOCK ICON
+========================== */
+
 .lock-icon{
 
-font-size:80px;
-
-margin-bottom:15px;
-
-animation:floatLock 2s ease-in-out infinite;
+    font-size:80px;
+    margin-bottom:15px;
+    animation:floatLock 2s ease-in-out infinite;
 
 }
 
 @keyframes floatLock{
 
-0%{
+    0%{
+        transform:translateY(0);
+    }
 
-transform:translateY(0px);
+    50%{
+        transform:translateY(-10px);
+    }
 
-}
-
-50%{
-
-transform:translateY(-10px);
-
-}
-
-100%{
-
-transform:translateY(0px);
+    100%{
+        transform:translateY(0);
+    }
 
 }
 
-}
+/* ==========================
+   PASSWORD BOX
+========================== */
 
 .password-box{
 
-position:relative;
-
-margin-top:30px;
+    position:relative;
+    margin-top:30px;
 
 }
 
 .password-box input{
 
-width:100%;
+    width:100%;
 
-padding:16px;
+    padding:16px;
+    padding-right:70px;
 
-padding-right:70px;
+    font-size:20px;
 
-font-size:20px;
+    border:none;
+    border-radius:50px;
 
-border:none;
-
-border-radius:50px;
-
-background:white;
+    background:white;
 
 }
+
+/* ==========================
+   EYE BUTTON
+========================== */
 
 .eye-btn{
 
-position:absolute;
+    position:absolute;
 
-right:8px;
+    right:8px;
+    top:5px;
 
-top:5px;
+    width:55px;
+    height:55px;
 
-width:55px;
+    border:none;
+    border-radius:50%;
 
-height:55px;
+    cursor:pointer;
 
-border-radius:50%;
+    background:#ff4081;
+    color:white;
 
-border:none;
-
-cursor:pointer;
-
-background:#ff4081;
-
-font-size:22px;
+    font-size:22px;
 
 }
+
+/* ==========================
+   LOGIN BUTTON
+========================== */
 
 .main-btn{
 
-margin-top:30px;
-
-width:100%;
-
-font-size:22px;
+    margin-top:30px;
+    width:100%;
+    font-size:22px;
 
 }
 
+/* ==========================
+   ERROR BOX
+========================== */
+
 .error-box{
 
-margin-top:20px;
+    margin-top:20px;
 
-padding:12px;
+    padding:12px;
 
-border-radius:12px;
+    border-radius:12px;
 
-background:#ffdddd;
+    background:#ffdddd;
 
-color:#d60000;
+    color:#d60000;
 
-font-weight:bold;
+    font-weight:bold;
 
-animation:shake .5s;
+    animation:shake .5s;
 
 }
 
 @keyframes shake{
 
-0%{transform:translateX(0);}
-20%{transform:translateX(-8px);}
-40%{transform:translateX(8px);}
-60%{transform:translateX(-8px);}
-80%{transform:translateX(8px);}
-100%{transform:translateX(0);}
+    0%{transform:translateX(0);}
+    20%{transform:translateX(-8px);}
+    40%{transform:translateX(8px);}
+    60%{transform:translateX(-8px);}
+    80%{transform:translateX(8px);}
+    100%{transform:translateX(0);}
+
+}
+
+/* ==========================
+   MOBILE RESPONSIVE
+========================== */
+
+@media (max-width:768px){
+
+    .login-card{
+
+        width:95%;
+        padding:25px;
+
+    }
+
+    .lock-icon{
+
+        font-size:60px;
+
+    }
+
+    .password-box{
+
+        margin-top:20px;
+
+    }
+
+    .password-box input{
+
+        font-size:17px;
+        padding:14px;
+        padding-right:60px;
+
+    }
+
+    .eye-btn{
+
+        width:45px;
+        height:45px;
+
+        top:6px;
+        right:6px;
+
+        font-size:18px;
+
+    }
+
+    .main-btn{
+
+        width:100%;
+        font-size:18px;
+        padding:14px;
+
+    }
+
+    .error-box{
+
+        font-size:15px;
+        padding:10px;
+
+    }
 
 }

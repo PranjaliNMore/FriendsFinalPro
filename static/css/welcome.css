@@ -1,119 +1,158 @@
+/* ==========================
+   WELCOME ICON
+========================== */
+
 .welcome-icon{
 
-font-size:80px;
-
-animation:floatHeart 3s ease-in-out infinite;
-
-margin-bottom:20px;
+    font-size:80px;
+    animation:floatHeart 3s ease-in-out infinite;
+    margin-bottom:20px;
 
 }
 
 @keyframes floatHeart{
 
-0%{
+    0%{
+        transform:translateY(0);
+    }
 
-transform:translateY(0);
+    50%{
+        transform:translateY(-12px);
+    }
 
-}
-
-50%{
-
-transform:translateY(-12px);
-
-}
-
-100%{
-
-transform:translateY(0);
+    100%{
+        transform:translateY(0);
+    }
 
 }
 
-}
+/* ==========================
+   USER NAME
+========================== */
 
 .name{
 
-color:#fff59d;
-
-text-shadow:
-
-0 0 15px gold;
+    color:#fff59d;
+    text-shadow:0 0 15px gold;
 
 }
+
+/* ==========================
+   TYPING TEXT
+========================== */
 
 #typingText{
 
-margin-top:25px;
+    margin-top:25px;
+    margin-bottom:35px;
 
-margin-bottom:35px;
+    font-size:24px;
+    line-height:1.8;
 
-font-size:24px;
+    color:white;
 
-line-height:1.8;
+    min-height:180px;
 
-color:white;
+    font-weight:500;
 
-min-height:180px;
-
-font-weight:500;
+    word-wrap:break-word;
 
 }
 
+/* ==========================
+   MUSIC SECTION
+========================== */
+
 .music-section{
 
-margin-top:15px;
-
-margin-bottom:20px;
+    margin-top:15px;
+    margin-bottom:20px;
 
 }
 
 #musicBtn{
 
-background:
+    background:linear-gradient(
+        90deg,
+        #673ab7,
+        #9c27b0
+    );
 
-linear-gradient(
-
-90deg,
-
-#673ab7,
-
-#9c27b0
-
-);
-
-margin-bottom:20px;
+    margin-bottom:20px;
 
 }
 
+/* ==========================
+   START BUTTON
+========================== */
+
 #startBtn{
 
-width:100%;
+    width:100%;
 
-font-size:22px;
+    font-size:22px;
 
-background:
-
-linear-gradient(
-
-90deg,
-
-#ff4081,
-
-#ff80ab
-
-);
+    background:linear-gradient(
+        90deg,
+        #ff4081,
+        #ff80ab
+    );
 
 }
 
 button{
 
-transition:.4s;
+    transition:.4s;
 
 }
 
 button:hover{
 
-transform:
+    transform:scale(1.05);
 
-scale(1.05);
+}
+
+/* ==========================
+   MOBILE RESPONSIVE
+========================== */
+
+@media (max-width:768px){
+
+    .welcome-icon{
+
+        font-size:60px;
+
+    }
+
+    .name{
+
+        display:block;
+        margin-top:8px;
+
+    }
+
+    #typingText{
+
+        font-size:18px;
+        line-height:1.6;
+        min-height:140px;
+        margin-bottom:25px;
+
+    }
+
+    .music-section{
+
+        margin-bottom:15px;
+
+    }
+
+    #musicBtn,
+    #startBtn{
+
+        width:100%;
+        font-size:18px;
+        padding:14px;
+
+    }
 
 }

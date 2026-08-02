@@ -1,73 +1,111 @@
+/* ==========================
+   BALLOON CONTAINER
+========================== */
+
 #balloonContainer{
 
-display:flex;
+    display:flex;
 
-flex-wrap:wrap;
+    flex-wrap:wrap;
 
-justify-content:center;
+    justify-content:center;
 
-gap:20px;
+    align-items:center;
 
-margin-top:35px;
+    gap:20px;
+
+    margin-top:35px;
 
 }
 
+/* ==========================
+   BALLOONS
+========================== */
+
 .balloon{
 
-font-size:70px;
+    font-size:70px;
 
-cursor:pointer;
+    cursor:pointer;
 
-transition:.3s;
+    user-select:none;
 
-user-select:none;
+    transition:.3s;
 
-animation:float 2s ease-in-out infinite;
+    animation:float 2s ease-in-out infinite;
 
 }
 
 .balloon:hover{
 
-transform:scale(1.2);
+    transform:scale(1.2);
 
 }
 
 @keyframes float{
 
-0%{
+    0%{
+        transform:translateY(0);
+    }
 
-transform:translateY(0);
+    50%{
+        transform:translateY(-15px);
+    }
 
-}
-
-50%{
-
-transform:translateY(-15px);
-
-}
-
-100%{
-
-transform:translateY(0);
+    100%{
+        transform:translateY(0);
+    }
 
 }
 
-}
+/* ==========================
+   COUNTER
+========================== */
 
 #counter{
 
-margin-top:30px;
+    margin-top:30px;
 
-min-height:40px;
+    min-height:40px;
+
+    font-size:24px;
+
+    font-weight:600;
+
+    text-align:center;
+
+    line-height:1.5;
 
 }
 
-@media(max-width:768px){
+/* ==========================
+   MOBILE RESPONSIVE
+========================== */
 
-.balloon{
+@media (max-width:768px){
 
-font-size:55px;
+    #balloonContainer{
 
-}
+        gap:15px;
+
+        margin-top:25px;
+
+    }
+
+    .balloon{
+
+        font-size:50px;
+
+    }
+
+    #counter{
+
+        font-size:18px;
+
+        min-height:35px;
+
+        padding:0 10px;
+
+    }
 
 }
