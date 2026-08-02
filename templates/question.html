@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>One Important Question ❤️</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/common.css') }}">
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/question.css') }}">
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+
+</head>
+
+<body>
+
+<div class="card">
+
+    <div class="question-icon">
+
+        ❤️
+
+    </div>
+
+    <h1>
+
+        Hey {{ username }} ❤️
+
+    </h1>
+
+    <h2>
+
+        I have one important question...
+
+    </h2>
+
+    <p>
+
+        Will you always be my best friend?
+
+    </p>
+
+    <div class="button-group">
+
+        <button
+            id="yesBtn"
+            class="yes-btn">
+
+            YES ❤️
+
+        </button>
+
+        <button
+            id="noBtn"
+            class="no-btn">
+
+            No 😅
+
+        </button>
+
+    </div>
+
+</div>
+
+<script src="{{ url_for('static', filename='js/common.js') }}"></script>
+
+<script src="{{ url_for('static', filename='js/question.js') }}"></script>
+
+</body>
+
+</html>

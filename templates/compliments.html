@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Special Compliments ❤️</title>
+
+<link rel="stylesheet"
+href="{{ url_for('static', filename='css/common.css') }}">
+
+<link rel="stylesheet"
+href="{{ url_for('static', filename='css/compliments.css') }}">
+
+</head>
+
+<body>
+
+<div class="card">
+
+<h1>🏆 Friendship Awards 🏆</h1>
+
+<h2>
+
+{{ username }}, here's something just for you ❤️
+
+</h2>
+
+<div id="complimentBox">
+
+Click the button below to reveal a compliment!
+
+</div>
+
+<button id="complimentBtn">
+
+✨ Reveal Compliment
+
+</button>
+
+<br><br>
+
+<button id="finalBtn">
+
+🎆 Final Surprise
+
+</button>
+
+</div>
+
+<script>
+
+const username="{{ username }}";
+
+</script>
+
+<script src="{{ url_for('static', filename='js/common.js') }}"></script>
+
+<script src="{{ url_for('static', filename='js/compliments.js') }}"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Your Surprise ❤️</title>
+
+<link rel="stylesheet"
+href="{{ url_for('static', filename='css/common.css') }}">
+
+<link rel="stylesheet"
+href="{{ url_for('static', filename='css/gift.css') }}">
+
+</head>
+
+<body>
+
+<div class="card">
+
+<div id="giftSection">
+
+<h1>
+
+🎁 Your Surprise Awaits
+
+</h1>
+
+<h2>
+
+{{ username }}, click the gift below ❤️
+
+</h2>
+
+<div id="giftBox">
+
+🎁
+
+</div>
+
+<p>
+
+Open the gift to reveal something special...
+
+</p>
+
+</div>
+
+<div id="surpriseSection" style="display:none;">
+
+<h1>
+
+💌 A Letter For You
+
+</h1>
+
+<div class="letter">
+
+<p id="typing"></p>
+
+</div>
+
+<img
+
+src="{{ url_for('static', filename='images/photo1.jpeg') }}"
+
+class="photo"
+
+alt="Memory">
+
+<br><br>
+
+<audio id="music" loop>
+
+<source
+
+src="{{ url_for('static', filename='music/friendship.mp3') }}"
+
+type="audio/mpeg">
+
+</audio>
+
+<button id="musicBtn">
+
+▶ Play Music
+
+</button>
+
+<br><br>
+
+<button id="continueBtn">
+
+Continue ❤️
+
+</button>
+
+</div>
+
+</div>
+
+<script>
+
+const username="{{ username }}";
+
+</script>
+
+<script src="{{ url_for('static', filename='js/common.js') }}"></script>
+
+<script src="{{ url_for('static', filename='js/gift.js') }}"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Pop The Balloons 🎈</title>
+
+<link rel="stylesheet"
+href="{{ url_for('static', filename='css/common.css') }}">
+
+<link rel="stylesheet"
+href="{{ url_for('static', filename='css/balloons.css') }}">
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+
+</head>
+
+<body>
+
+<div class="card">
+
+<h1>
+
+🎈 Balloon Challenge
+
+</h1>
+
+<h2>
+
+{{ username }}, pop all the balloons!
+
+</h2>
+
+<p>
+
+Each balloon hides something fun ❤️
+
+</p>
+
+<div id="balloonContainer">
+
+</div>
+
+<h2 id="counter">
+
+0 / 10 Popped
+
+</h2>
+
+</div>
+
+<script src="{{ url_for('static', filename='js/common.js') }}"></script>
+
+<script src="{{ url_for('static', filename='js/balloons.js') }}"></script>
+
+</body>
+
+</html>

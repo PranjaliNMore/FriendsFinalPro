@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Unlock the Surprise ❤️</title>
+
+    <!-- Common CSS -->
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/common.css') }}">
+
+    <!-- Login CSS -->
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/login.css') }}">
+
+</head>
+
+<body>
+
+<div class="card login-card">
+
+    <div class="lock-icon">
+        🔒
+    </div>
+
+    <h1>Welcome ❤️</h1>
+
+    <h2>Your Surprise is Waiting...</h2>
+
+    <p>
+
+        Enter the secret password to unlock the magical journey.
+
+    </p>
+
+    <form action="/login" method="POST">
+
+        <div class="password-box">
+
+            <input
+                id="password"
+                type="password"
+                name="password"
+                placeholder="Enter Password"
+                required>
+
+            <button
+                type="button"
+                class="eye-btn"
+                onclick="togglePassword()">
+
+                👁️
+
+            </button>
+
+        </div>
+
+        {% if error %}
+
+        <div class="error-box">
+
+            {{ error }}
+
+        </div>
+
+        {% endif %}
+
+        <button class="main-btn">
+
+            ✨ Unlock Surprise
+
+        </button>
+
+    </form>
+
+</div>
+
+<script src="{{ url_for('static', filename='js/common.js') }}"></script>
+
+<script src="{{ url_for('static', filename='js/login.js') }}"></script>
+
+</body>
+
+</html>

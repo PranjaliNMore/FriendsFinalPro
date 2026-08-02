@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Welcome ❤️</title>
+
+    <!-- Common CSS -->
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/common.css') }}">
+
+    <!-- Welcome CSS -->
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/welcome.css') }}">
+
+</head>
+
+<body>
+
+<div class="card">
+
+    <div class="welcome-icon">
+        💖
+    </div>
+
+    <h1>
+
+        Welcome,
+
+        <span class="name">
+
+            {{ username }}
+
+        </span>
+
+        ❤️
+
+    </h1>
+
+    <div id="typingText"></div>
+
+    <div class="music-section">
+
+        <audio id="music" loop>
+
+            <source
+            src="{{ url_for('static', filename='music/music.mp3') }}"
+            type="audio/mpeg">
+
+        </audio>
+
+        <button
+        id="musicBtn">
+
+            ▶ Play Music
+
+        </button>
+
+    </div>
+
+    <button
+    id="startBtn">
+
+        ✨ Begin The Journey
+
+    </button>
+
+</div>
+
+<script src="{{ url_for('static', filename='js/common.js') }}"></script>
+
+<script src="{{ url_for('static', filename='js/welcome.js') }}"></script>
+
+</body>
+
+</html>

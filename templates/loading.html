@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Preparing Your Surprise ❤️</title>
+
+    <!-- Common CSS -->
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/common.css') }}">
+
+    <!-- Loading CSS -->
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/loading.css') }}">
+
+</head>
+
+<body>
+
+<div class="card">
+
+    <h1>❤️ Friendship Surprise ❤️</h1>
+
+    <h2>Please Wait...</h2>
+
+    <div class="loader">
+
+        <div class="progress">
+
+            <span id="percentage">0%</span>
+
+        </div>
+
+    </div>
+
+    <p id="loadingText">
+
+        Preparing something special...
+
+    </p>
+
+</div>
+
+<!-- Common JS -->
+<script src="{{ url_for('static', filename='js/common.js') }}"></script>
+
+<!-- Loading JS -->
+<script src="{{ url_for('static', filename='js/loading.js') }}"></script>
+
+</body>
+
+</html>

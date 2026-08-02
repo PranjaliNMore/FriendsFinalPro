@@ -1,0 +1,144 @@
+.trophy{
+
+font-size:90px;
+
+animation:bounce 2s infinite;
+
+margin-bottom:20px;
+
+}
+
+@keyframes bounce{
+
+0%,100%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-15px);
+
+}
+
+}
+
+.letter{
+
+background:white;
+
+color:#444;
+
+padding:25px;
+
+border-radius:20px;
+
+margin:30px auto;
+
+max-width:600px;
+
+font-size:22px;
+
+line-height:1.8;
+
+box-shadow:0 15px 30px rgba(0,0,0,.2);
+
+}
+
+.certificate{
+
+margin-top:35px;
+
+padding:25px;
+
+background:linear-gradient(
+
+135deg,
+
+rgb(255, 192, 236),
+
+rgb(255, 192, 238)
+
+);
+
+border-radius:20px;
+
+border:4px solid gold;
+
+color:#333;
+
+box-shadow:0 10px 25px rgba(0,0,0,.2);
+
+}
+
+.certificate h1{
+
+font-size:45px;
+
+color:#e91e63;
+
+margin:20px 0;
+
+}
+
+#restartBtn{
+
+margin-top:35px;
+
+font-size:22px;
+
+background:
+
+linear-gradient(
+
+90deg,
+
+#ff4081,
+
+#ff9800
+
+);
+
+}
+
+@media(max-width:768px){
+
+.letter{
+
+font-size:18px;
+
+}
+
+.certificate h1{
+
+font-size:34px;
+
+}
+
+}
+
+/* ==========================
+   LETTER BOX
+========================== */
+
+.letter{
+    background:#ffffff;
+    padding:25px;
+    margin:30px auto;
+    border-radius:20px;
+    max-width:600px;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
+
+/* Force only the message inside the letter to be dark */
+#finalMessage{
+    color:#333 !important;
+    white-space:pre-line;
+    font-size:22px;
+    line-height:1.8;
+}
+
+#finalMessage *{
+    color:#333 !important;
+}
